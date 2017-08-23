@@ -1,5 +1,5 @@
 { 
-	"name": "日报",				//名称 
+	"name": "日报",				//名称3 
 	"manifest_version":2,  
 	"version": "0.1",					//版本号 
 	"description": "填写日报",	//描述信息，会显示在插件属性里 
