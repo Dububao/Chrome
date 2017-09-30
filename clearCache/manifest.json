@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 { 
 	"name": "日报",				//名称3 
 	"manifest_version":2,  
@@ -21,4 +22,47 @@
 		 "browsingData",
 		 "tabs"
 	 ]
+=======
+{
+    "name": "日报", //名称 
+    "manifest_version": 2,
+    "version": "0.1", //版本号 
+    "description": "填写日报", //描述信息，会显示在插件属性里 
+    "options_page": "popup.html",
+    "icons":
+    {
+        "16": "css/images/panda_16.png",
+        "48": "css/images/panda_48.png"
+    },
+
+    "browser_action":
+    {
+        "default_icon": "css/images/panda_32.png",
+        "default_title": "日报",
+        "default_popup": "popup.html"
+    },
+    // background，后台执行的文件，一般只需要指定js即可。会在浏览器打开后全局范围内后台运行
+    "background":
+    {
+        "scripts": ["js/jquery-2.1.1.min.js", "js/background.js"],
+        // persistent代表“是否持久”。如果是一个单纯的全局后台js，需要一直运行，则不需配置persistent（或者为true）。当配置为false时转变为事件js，依旧存在于后台，在需要时加载，空闲时卸载
+        "persistent": false
+    },
+
+    // content_scripts，在各个浏览器页面里运行的文件，可以获取到当前页面的上下文DOM
+    "content_scripts": [
+    {
+        // matches 匹配 content_scripts 可以在哪些页面运行
+        "matches": ["http://localhost/*", "https://127.0.0.1/*", "https://dev-web/*"],
+        "js": ["js/jquery-2.1.1.min.js", "js/jquery-ui-1.10.3.js", "js/content.js"],
+        "css": ["css/content.css"]
+    }],
+
+    "permissions": [
+        "contextMenus",
+        "browsingData",
+         "storage",
+        "tabs"
+    ]
+>>>>>>> 7332bfc95cc49eb9d6eba5362616e031df1fe56b
 }
