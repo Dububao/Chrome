@@ -1,0 +1,121 @@
+.dudu {
+    width: 160px;
+    right: 5px;
+    top: 180px;
+    position: fixed;
+}
+
+.dudu a {
+    color: #fff;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.dudu a:hover {
+    text-decoration: none;
+}
+
+.dudu hr {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.dudu .dudu-menu {
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    /* position: fixed;*/
+    z-index: 999;
+    float: right;
+    /* filter: alpha(opacity=50);
+        opacity: 0.5;*/
+}
+
+.dudu-menu .dudu-index {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    color: #6abeb2;
+    border-color: #dbe9e7;
+    -webkit-box-shadow: inset 0 0 1px 1px #6abeb2;
+    box-shadow: inset 0 0 1px 1px #6abeb2;
+}
+
+.dudu-menu .dudu-index span {
+    line-height: 1.4;
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%
+}
+
+.dudu-menu .dudu-index:hover {
+    color: #fff;
+    background: #6abeb2
+}
+
+.dudu-pop {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    z-index: 999;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 30px;
+    display: none;
+}
+
+.dudu-pop .dudu-title {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #f1fbf4;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    background-color: #6abeb2;
+}
+
+.dudu-pop .dudu-content {
+    background-color: #6abeb2;
+}
+
+.dudu-pop .dudu-title a:hover {
+    color: #026e00;
+    cursor: hand;
+}
+
+
+.dudu-pop .dudu-content ul {
+    margin: 0 auto;
+    padding: 10px;
+    padding-right: 0px;
+    text-align: left;
+}
+
+.dudu-pop .dudu-content ul li:hover {
+    background-color: #026e00;
+    cursor: hand;
+}
+
+.dudu .show {
+    display: block;
+}
+
+.dudu .hide {
+    display: none;
+}
